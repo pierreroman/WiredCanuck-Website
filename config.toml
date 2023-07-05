@@ -1,4 +1,44 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "ananke"
+baseURL = "http://www.wiredcanuck.com/"
+languageCode = "en-us"
+title = "WiredCanuck's personal ramblings"
+theme = "LeaveIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = "UA-29484205-3"
+
+preserveTaxonomyNames = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[params]
+    since = 2011
+    author = "Pierre Roman"                           # Author's name
+    avatar = "/logo/WiredCanuck-logo-Medium.png"           # Author's avatar
+    subtitle = "Relax...  But make a backup"         # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
+
+    google_verification = ""
+   
+    description = "The ramblings of an old IT Pro how's been doing on-prem and in cloud infrastructure and operations for over 30 years." # site description
+    keywords = "Azure, cloud, hybrid" # site keywords
+
+[params.social]
+    Twitter = "wiredcanuck"
+    Email   = "pierrer@microsoft.com"
+    LinkedIn  = "pierreroman"
+    
